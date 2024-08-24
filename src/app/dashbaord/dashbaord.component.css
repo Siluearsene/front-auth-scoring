@@ -1,0 +1,30 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+*
+.form-actions button:hover {
+    background-color: darkgreen;
+}
+
+.saisier-button {
+    height: 100%;
+    background-color: #2ecc71;
+}
+
+.fichier-button {
+    height: 75%;
+    width: 100%;
+    background-color: #3498db;
+}
+
+.saisier-button:hover,
+.fichier-button:hover {
+    opacity: 0.9;
+}
