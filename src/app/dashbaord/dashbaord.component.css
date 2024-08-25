@@ -1,30 +1,60 @@
-body {
-    font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
-    margin: 0;
-    padding: 20px;
+
+.container {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 100vh;
-}
-*
-.form-actions button:hover {
-    background-color: darkgreen;
+    min-height: 100vh; /* Pour occuper toute la hauteur de la page */
+    background-color: #f8f9fa; /* Couleur de fond blanc cassé */
+    color: #28a745; /* Vert pour le texte */
 }
 
-.saisier-button {
-    height: 100%;
-    background-color: #2ecc71;
+.dashboard-title {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    text-align: center;
+    padding: 10px;
+    border: 3px solid #28a745; /* Bordure verte */
+    display: inline-block; /* Nécessaire pour que la bordure encadre uniquement le texte */
+    border-radius: 8px; /* Coins arrondis */
 }
 
-.fichier-button {
-    height: 75%;
+.dashboard-button {
+    background-color: #28a745; /* Vert pour les boutons */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1.2rem;
+    margin: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    display: inline-block;
+    text-align: center;
+}
+
+.dashboard-button:hover {
+    background-color: #218838; /* Vert foncé au survol */
+}
+
+.file-label {
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+}
+
+.file-label input[type="file"] {
+    position: absolute;
+    top: 0;
+    left: 0;
     width: 100%;
-    background-color: #3498db;
+    height: 100%;
+    opacity: 0;
+    cursor: pointer;
 }
 
-.saisier-button:hover,
-.fichier-button:hover {
-    opacity: 0.9;
+.dashboard-button, .file-label {
+    width: 200px; /* Ajustez la largeur pour qu'elle corresponde à celle du bouton SAISIR */
+    text-align: center;
 }

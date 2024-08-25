@@ -1,40 +1,16 @@
-<body>
-    <div class="container">
-            <div class="form-header">
-                <h2>Nom</h2>
-            </div>
-            <div class="form-actions d-flex justify-content-around">
-                <button type="button" class="saisier-button">Saisir</button>
-                <button type="button" class="fichier-button">Choisir un fichier</button>
-            </div>
-            <div class="form-group">
-                <label for="nom">Nom:</label>
-                <input type="text" id="nom" name="nom" placeholder="Entrer le nom">
-            </div>
-            <div class="form-group">
-                <label for="credit">Crédit:</label>
-                <select id="credit" name="credit">
-                    <option value="2012">2012</option>
-                    <option value="2013">2013</option>
-                    <option value="2014">2014</option>
-                    <option value="2015">2015</option>
-                </select>
-            </div>
-            <div class="form-group">
-                <label for="bon">Bon:</label>
-                <input type="text" id="bon" name="bon">
-            </div>
-            <div class="form-group">
-                <label for="mauvais">Mauvais:</label>
-                <input type="text" id="mauvais" name="mauvais">
-            </div>
-            <div class="form-group">
-                <label for="neutre">Neutre:</label>
-                <input type="text" id="neutre" name="neutre">
-            </div>
-            <div class="form-group">
-                <label for="note">Note:</label>
-                <input type="text" id="note" name="note">
-            </div>
+
+<div class="body container d-flex flex-column justify-content-center align-items-center min-vh-100">
+    <div class="text-center">
+        <div class="dashboard-title">
+            TABLEAU DE BORD
+        </div>
     </div>
-</body>
+    <div class="text-center d-flex">
+        <button class="dashboard-button" routerLink="/saisir">SAISIR</button>
+        <label class="dashboard-button file-label">
+            <input type="file" (change)="onFileSelected($event)">
+            Choisir un fichier
+        </label>
+    </div>
+</div>  
+
