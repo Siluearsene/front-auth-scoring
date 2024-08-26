@@ -20,17 +20,17 @@
                     </div>
                 </div>
                 <div class="row">
-                    <i>
+                    <i class="mt-2">
                         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-lock-fill" viewBox="0 0 16 16">
                             <path d="M8 1a2 2 0 0 1 2 2v4H6V3a2 2 0 0 1 2-2m3 6V3a3 3 0 0 0-6 0v4a2 2 0 0 0-2 2v5a2 2 0 0 0 2 2h6a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2"/>
                         </svg>
                     </i>
-                    <input name="password" type="password" id="password" formControlName="password" placeholder="Mot de passe">
+                    <input class="mt-2" name="password" type="password" id="password" formControlName="password" placeholder="Mot de passe">
                     <div *ngIf="loginForm.get('password')?.touched && loginForm.get('password')?.invalid" class="error-message">
-                        <div *ngIf="loginForm.get('password')?.errors?.['required']">Le champ mot de passe est requis.</div>
+                        <div class="mb-2" *ngIf="loginForm.get('password')?.errors?.['required']">Le champ mot de passe est requis.</div>
                     </div>
                 </div>
-                <div class="pass"><a href="">Mot de passe oublié?</a></div>
+                <div class="pass mt-4"><a href="">Mot de passe oublié?</a></div>
                 <div [ngClass]="{'button': loginForm.valid, 'button2': !loginForm.valid}" class="row">
                     <input type="submit" value="Login">
                 </div>
