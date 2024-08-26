@@ -27,23 +27,6 @@ export class LoginComponent {
       this.errorMessage = 'Veuillez remplir tous les champs avant de continuer.';
     } else {
       this.errorMessage = null;
-      
-      // login(credentials: AuthCredentials): Observable<AuthResponse> {
-      //   const headers = new HttpHeaders({
-      //     "Content-Type": "application/x-www-form-urlencoded",
-      //     accept: "application/json",
-      //   });
-      //   const body = new HttpParams()
-      //     .set("username", credentials.username)
-      //     .set("password", credentials.password);
-    
-      //   return this.http.post<AuthResponse>(
-      //     ${this.apiUrl}/login,
-      //     body.toString(),
-      //     { headers }
-      //   );
-      // }
-
 
       // Créer les headers personnalisés
       const headers = new HttpHeaders({

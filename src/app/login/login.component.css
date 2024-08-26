@@ -136,3 +136,15 @@ form .signup-link a:hover{
       font-size: 20px; /* Decrease the font size */
     }
   }
+
+  .error-message {
+    color: red;
+    font-size: 0.875rem;
+  }
+  
+  .alert-danger {
+    color: red;
+    font-size: 1rem;
+    margin-top: 1rem;
+  }
+  
