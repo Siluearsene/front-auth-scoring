@@ -36,3 +36,17 @@
     color: #1abc9c;
     font-size: 1.2rem; /* Slightly larger font for the legend */
 }
+.btn-predict {
+    background-color: #1abc9c; /* Couleur de fond verte */
+    color: white; /* Couleur du texte en blanc */
+    border: none;
+    padding: 12px 24px; /* Taille du bouton */
+    font-size: 1.2rem; /* Taille du texte */
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 20px; /* Espacement au-dessus du bouton */
+}
+
+.btn-predict:hover {
+    background-color: #16a085; /* Couleur de fond légèrement plus foncée au survol */
+}

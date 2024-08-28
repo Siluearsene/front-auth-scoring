@@ -4,7 +4,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    min-height: 100vh; /* Pour occuper toute la hauteur de la page */
+    /* min-height: 100vh; Pour occuper toute la hauteur de la page */
     background-color: #f8f9fa; /* Couleur de fond blanc cassé */
     color: #1abc9c; /* Vert pour le texte */
 }
@@ -57,4 +57,25 @@
 .dashboard-button, .file-label {
     width: 200px; /* Ajustez la largeur pour qu'elle corresponde à celle du bouton SAISIR */
     text-align: center;
+}
+.table {
+    width: 60%; /* Diminuez la largeur du tableau */
+    margin-left: auto;
+    margin-right: auto; /* Centre le tableau horizontalement */
+}
+
+.table-bordered {
+    border: 1px solid #1abc9c; /* Ajuster la bordure du tableau si nécessaire */
+}
+
+tr>th{
+    border:1px solid #1abc9c;
+    color:#1abc9c;
+}
+
+th, td {
+    border:1px solid #1abc9c;
+    text-align: center; /* Centre le texte dans les cellules */
+    vertical-align: middle; /* Aligne verticalement au milieu */
+    padding: 10px; /* Ajouter du padding pour rendre les cellules plus espacées */
 }
