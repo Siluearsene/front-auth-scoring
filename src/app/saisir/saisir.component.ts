@@ -90,7 +90,7 @@ export class SaisirComponent {
       });
   
       // Envoyer la requête à l'API avec des données JSON
-      this.http.post("http://localhost:8000/api/v1/generate-excel/", JSON.stringify(body), { headers }).subscribe({
+      this.http.post("https://auth-scoring.onrender.com/api/v1/generate-excel/", JSON.stringify(body), { headers }).subscribe({
         next: (res: any) => {
           console.log("Réponse de l'API:", res);
           const y_proba = res.y_prob;
