@@ -1,80 +1,82 @@
 <div class="container form-container" style="background-color: white;">
     <h2 class="form-title">Formulaire de Saisie</h2>
-    <form>
+    <form [formGroup]="saisirForm" (ngSubmit)="saisirButton()">
         <div class="row">
             <div class="col-md-6">
+                <!-- <div class="form-group">
+                    <label for="nom">Id</label>
+                    <input type="text" class="form-control" id="id" formControlName="id" placeholder="Entrer la valeur">
+                </div> -->
                 <div class="form-group">
-                    <label for="field1">Champ 1</label>
-                    <input type="text" class="form-control" id="field1" placeholder="Entrer la valeur">
+                    <label for="nom">NOM</label>
+                    <input type="text" class="form-control" id="nom" formControlName="nom" placeholder="Entrer la valeur">
                 </div>
                 <div class="form-group">
-                    <label for="field2">Champ 2</label>
-                    <input type="text" class="form-control" id="field2" placeholder="Entrer la valeur">
+                    <label for="montant_du_pret">MONTANT DU PRÊT</label>
+     0               <input type="text" class="form-control" id="montant_du_pret" formControlName="montant_du_pret" placeholder="Entrer la valeur">
                 </div>
                 <div class="form-group">
-                    <label for="field3">Champ 3</label>
-                    <input type="text" class="form-control" id="field3" placeholder="Entrer la valeur">
+                    <label for="anciennete_avant_pret">ANCIENNETÉ AVANT PRÊT</label>
+                    <input type="text" class="form-control" id="anciennete_avant_pret" formControlName="anciennete_avant_pret" placeholder="Entrer la valeur">
                 </div>
                 <div class="form-group">
-                    <label for="field4">Champ 4</label>
-                    <input type="text" class="form-control" id="field4" placeholder="Entrer la valeur">
+                    <label for="age">ÂGE</label>
+                    <input type="text" class="form-control" id="age" formControlName="age" placeholder="Entrer la valeur">
                 </div>
                 <div class="form-group">
-                    <label for="field5">Champ 5</label>
-                    <input type="text" class="form-control" id="field5" placeholder="Entrer la valeur">
+                    <label for="nb_enfants">NOMBRE D’ENFANTS</label>
+                    <input type="text" class="form-control" id="nb_enfants" formControlName="nb_enfants" placeholder="Entrer la valeur">
                 </div>
                 <div class="form-group">
-                    <label for="field6">Champ 6</label>
-                    <input type="text" class="form-control" id="field6" placeholder="Entrer la valeur">
+                    <label for="montant_encours">MONTANT ENCOURS</label>
+                    <input type="text" class="form-control" id="montant_encours" formControlName="montant_encours" placeholder="Entrer la valeur">
                 </div>
                 <div class="form-group">
-                    <label for="field7">Champ 7</label>
-                    <input type="text" class="form-control" id="field7" placeholder="Entrer la valeur">
+                    <label for="nbr_credir">NOMBRE DE CREDIR</label>
+                    <input type="text" class="form-control" id="nbr_credir" formControlName="nbr_credir" placeholder="Entrer la valeur">
                 </div>
                 <div class="form-group">
-                    <label for="field8">Champ 8</label>
-                    <input type="text" class="form-control" id="field8" placeholder="Entrer la valeur">
+                    <label for="taux_interet">TAUX D’INTÉRÊT</label>
+                    <input type="text" class="form-control" id="taux_interet" formControlName="taux_interet" placeholder="Entrer la valeur">
                 </div>
             </div>
             <div class="col-md-6">
                 <div class="form-group">
-                    <label for="field9">Champ 9</label>
-                    <input type="text" class="form-control" id="field9" placeholder="Entrer la valeur">
+                    <label for="revenu">REVENU</label>
+                    <input type="text" class="form-control" id="revenu" formControlName="revenu" placeholder="Entrer la valeur">
                 </div>
                 <div class="form-group">
-                    <label for="field10">Champ 10</label>
-                    <input type="text" class="form-control" id="field10" placeholder="Entrer la valeur">
+                    <label for="duree_pret">DURÉE DU PRÊT</label>
+                    <input type="text" class="form-control" id="duree_pret" formControlName="duree_pret" placeholder="Entrer la valeur">
                 </div>
                 <div class="form-group">
-                    <label for="field11">Champ 11</label>
-                    <input type="text" class="form-control" id="field11" placeholder="Entrer la valeur">
+                    <label for="montant_pret_annee">MONTANT PRÊT POUR L’ANNÉE</label>
+                    <input type="text" class="form-control" id="montant_pret_annee" formControlName="montant_pret_annee" placeholder="Entrer la valeur">
                 </div>
                 <div class="form-group">
-                    <label for="field12">Champ 12</label>
-                    <input type="text" class="form-control" id="field12" placeholder="Entrer la valeur">
+                    <label for="reste_vivre">RESTE À VIVRE</label>
+                    <input type="text" class="form-control" id="reste_vivre" formControlName="reste_vivre" placeholder="Entrer la valeur">
                 </div>
                 <div class="form-group">
-                    <label for="field13">Champ 13</label>
-                    <input type="text" class="form-control" id="field13" placeholder="Entrer la valeur">
+                    <label for="agence">AGENCE</label>
+                    <input type="text" class="form-control" id="agence" formControlName="agence" placeholder="Entrer la valeur">
                 </div>
                 <div class="form-group">
-                    <label for="field14">Champ 14</label>
-                    <input type="text" class="form-control" id="field14" placeholder="Entrer la valeur">
+                    <label for="genre">GENRE</label>
+                    <input type="text" class="form-control" id="genre" formControlName="genre" placeholder="Entrer la valeur">
                 </div>
                 <div class="form-group">
-                    <label for="field15">Champ 15</label>
-                    <input type="text" class="form-control" id="field15" placeholder="Entrer la valeur">
-                </div> <div class="form-group">
-                    <label for="field16">Champ 16</label>
-                    <input type="text" class="form-control" id="field16" placeholder="Entrer la valeur">
+                    <label for="secteur_activite">SECTEUR D’ACTIVITÉ</label>
+                    <input type="text" class="form-control" id="secteur_activite" formControlName="secteur_activite" placeholder="Entrer la valeur">
+                </div>
+                <div class="form-group">
+                    <label for="segment">SEGMENT</label>
+                    <input type="text" class="form-control" id="segment" formControlName="segment" placeholder="Entrer la valeur">
                 </div>
             </div>
         </div>
         <div class="form-actions text-end">
-            <button type="button" class="btn btn-predict">Predict</button>
-        </div>
-        <div mt-0 class="form-legend">
-            <p>Légende : Tous les champs sont obligatoires.</p>
+            <button type="submit" class="btn btn-predict">Predict</button>
         </div>
     </form>
 </div>
